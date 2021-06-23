@@ -1,4 +1,4 @@
-# OTHER-SOFTWARE-PROJECTS
+# SOFTWARE-PROJECTS
 On This Repository I am Describing You About Some Of the Projects..<br/>
 
 What You Learn Here:-<br/>
