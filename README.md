@@ -12,7 +12,7 @@ What You Learn Here:-<br/>
 
 Some Multiple Files Program:-<br/>
 --Advance Antivirus Program You Need antivirusadvance.bat and andtivirus.vbs that is present in Repository.<br/>
---In a Simple Antivirus Program that is antivirus.bat To Run The File You Need To Make Virus.bat File that is present in Repository.<br/>
+--In a Simple Antivirus Program that is antivirus.bat To Run The File You Need To Make virus.bat File that is present in Repository.<br/>
 
 Some Things You Need To Know:-<br/>
 --All Files Has Single Files Except Antirus and Advance Antivirus.<br/>
