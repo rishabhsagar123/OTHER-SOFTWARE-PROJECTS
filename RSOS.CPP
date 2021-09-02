@@ -4,9 +4,11 @@
 #include<string.h>
 #include<stdlib.h>
 #include<time.h>
+#include<constrea.h>
 int main()
 {
 clrscr();
+constream cout;
 textcolor(GREEN);
 textbackground(BLACK);
 char newuser[50];
@@ -28,7 +30,26 @@ char password[50];
 time_t now;
 time(&now);
 epic:
+
+cout<<"__________________________________\n";
+cout<<setclr(14);
+
+
+cout<<"*******             *******    ********\n";
+cout<<"/**////**           **/////**  **//////\n";
+cout<<"/**   /**   ****** **     //**/**\n";
+cout<<"/*******   **//// /**      /**/*********\n";
+cout<<"/**///**  //***** /**      /**////////**\n";
+cout<<"/**  //**  /////**//**     **        /**\n";
+cout<<"/**   //** ******  //*******   ********\n";
+cout<<"//     // //////    ///////   ////////\n";
+cout<<"\n";
+cout<<"\n";
+
+textcolor(GREEN);
 cprintf("%s", ctime(&now));
+textcolor(YELLOW);
+
 cout<<"__________________________________\n";
 cprintf("    RsOS beta OS v.1.0\n   ");
 cout<<"\n";
