@@ -22,6 +22,9 @@ Some Things You Need To Know:-<br/>
 
 Save the Files as For Batch Files .bat and For vbs .vbs in a Notepad.<br/>
 
+# About Operating System- RsOS
+
+RsOs is Copyrighted By The GamEvolution You can use it as for only Educational Purposes..<br/>
 .Cpp is the Extension of C++ Files, You can Use Turbo C++ or any C++ Compiler to Compile the Code..<br/>
 
 Bravo!! You Learn All the Software Products Of this Repository.
