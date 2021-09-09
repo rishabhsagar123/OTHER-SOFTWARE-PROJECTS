@@ -5,6 +5,7 @@
 #include<stdlib.h>
 #include<time.h>
 #include<constrea.h>
+#include<dos.h>
 int main()
 {
 clrscr();
@@ -21,8 +22,8 @@ char username[50];
 char calc[]="Calc";
 char user[]="rishabh";
 char pass[]="rishabh";
-char server[]="Show";
-char smd[]="trojan";
+char server[]="2";
+char smd[]="1";
 float addnumi;
 float addnumii;
 int  flob;
@@ -43,35 +44,40 @@ cout<<"/**///**  //***** /**      /**////////**\n";
 cout<<"/**  //**  /////**//**     **        /**\n";
 cout<<"/**   //** ******  //*******   ********\n";
 cout<<"//     // //////    ///////   ////////\n";
+delay(2000);
 cout<<"\n";
 cout<<"\n";
-
 textcolor(GREEN);
 cprintf("%s", ctime(&now));
 textcolor(YELLOW);
 
 cout<<"__________________________________\n";
 cprintf("    RsOS beta OS v.1.0\n   ");
+delay(2000);
 cout<<"\n";
 cout<<"__________________________________\n";
 textcolor(RED);
 textbackground(BLACK);
 cprintf("Created and developed by The GamEvolution.This program may have some minor bugs");
+delay(2000);
 cout<<"\n";
 textcolor(BLUE);
 textbackground(BLACK);
 cprintf("Please report any bugs found to The GamEvolution.");
+
 cout<<"\n\n\n";
 cout<<"_______________\n";
 textcolor(YELLOW);
 textbackground(BLACK);
 cprintf("Authentication");
+delay(2000);
 cout<<"\n";
 cout<<"________________\n";
 cout<<"Username: \n";
 cin>>username ;
 cin.ignore();
 cout<<"Password: \n";
+delay(2000);
 cin>>password;
 cin.ignore();
 if(strcmp(username,user)==0&&strcmp(password,pass)==0)
@@ -107,10 +113,10 @@ switch(flob)
 		  cin>>addnumi;
 		  cout<<"Enter 2nd number: ";
 		  cin>>addnumii;
-	     cout<<"You're answer is: "<<addnumi-addnumii<<endl;
-	     cin.get();
-	     goto back;
-	     break;
+		  cout<<"You're answer is: "<<addnumi-addnumii<<endl;
+		  cin.get();
+		  goto back;
+		  break;
 	     case 3 :
 		  cout<<"Enter 1st number: \n";
 		  cin>>addnumi;
@@ -129,10 +135,15 @@ switch(flob)
 		  goto back;
 		  break;
 		  case 5 : cout<<"The creator and developer of this calculator is The GamEvolution.\nThe GamEvolution is an";
+		  delay(2000);
 		  cout<<"is a Software Company that builds intresting products"<<endl;
+		  delay(2000);
 		  cout<<"Rishabh Sagar was the developer of the Simple OS\n\n\n";
+		  delay(2000);
 		  cout<<"The program may be redistrubuted and used \nin other programs no copyright acts will be violanted\n\n";
+		  delay(2000);
 		  cout<<"\n\n\n\n\n";
+
 		  }
 
 		  cin.get();
@@ -145,18 +156,27 @@ if(strcmp(wishes,commands)==0)
 
 {
 int menu;
+int choser;
+int maner;
+int score=0;
+char fixit[100];
 char epic[100];
 int  start;
 char command[50];
-char deface[]="Quit";
-char closing[]="index";
-char server[]="Show";
+char deface[]="3";
+char closing[]="1";
+char server[]="2";
+char frk[]="2";
+char trj[]="3";
+char hyd[]="4";
+char keyl[]="5";
 char twocommand[50];
 leg:
 cout<<"_______________________________________________\n";
 cout<<"       ***Welcome to RsOs Game***           \n";
 cout<<"      ~(By The GamEvolution)~                        \n";
 cout<<"_______________________________________________\n";
+
 cout<<"\nPlease enter you're name:  " ;
 cin>>epic;
 cin.ignore();
@@ -183,28 +203,54 @@ case 1: cout<<" The password is conecutive number from 1 to 3.  ";
 cin.get();
 goto monster;
 break;
-case 123: cout<<"You succsecfully loged on as Superuser\n";
+case 123: cout<<"You successfully logged on as Superuser\n";
 cout<<"\n";
 server:
+cout<<"Welcome To The Learning Os Here You Can Learn About Ethical Hacking Tricks and Hacks By through Games\n";
+cout<<"1.What is The Use of Ethical Hacking?\n";
+cout<<"2.How You Can Protect Your Computer from that?\n";
+cout<<"3.Ready to Play-CyberWar Game type for Yes (yes) and for No (no)\n";
 cout<<"Enter Command: \n";
 cin>>command;
 if(strcmp(command,smd)==0)
 {
-cout<<"Sterling trojan released intel disrupeted servers partially damaged\n";
-cin.get();
-goto server;
-if(strcmp(command,server)==0)
-{
-cout<<"Ip addresses:125.937.368 ; 98.678.156 ; 101.65.481 ;125.937.358 ; 99.678.156 ;\n121.65.481 ...\n";
+textcolor(BLUE);
+cout<<"Ethical Hacking is the study where it describes how you can protect your system against hackers and viruses..\n";
+
+
+cout<<"\n";
+cout<<"\n";
+
 cin.get();
 goto server;
 }
+if(strcmp(command,server)==0)
+{
+textcolor(RED);
+cout<<"You Can Protect Your System from Hacking by Various Antiviruses, Firewalls \n";
+
+
+cout<<"\n";
+cout<<"\n";
+
+cin.get();
+goto server;
 }
 if(strcmp(command,deface)==0)
 {
-cout<<"Network connection closed\n";
-cout<<"Servers Offline\n";
-cout<<"Next comand: \n";
+	play:
+textcolor(RED);
+cout<<"This Game is About Some Attacks and Hacks That You Face in a Game Your Aim To Stop Them\n";
+cout<<"See This Game Is Not Hacking Your System or Software its not realistic\n";
+cout<<"This Game Gives you Brief About How You Can Stop Any Attack and Viruses\n";
+textcolor(GREEN);
+cout<<"-----------------------Let's Start!!!-----------------------\n";
+textcolor(BLUE);
+cout<<"1.About Company\n";
+cout<<"2.Face Fork Bomb Attack\n";
+cout<<"3.Face Trojan Attack\n";
+cout<<"4.Face Hydra Attack\n";
+cout<<"5.Face KeyLogger Attack\n";
 cin>>twocommand;
 if(strcmp(twocommand,closing)==0)
 {
@@ -226,14 +272,143 @@ if(strcmp(twocommand,closing)==0)
 			cout<<" The website network servers are online(You can log in)\n.........";
 			cout<<"_____________________________________________________________________________\n";
 		     cin.get();
+		     goto play;
 
 
 		     }
+if(strcmp(twocommand,frk)==0){
+	misr:
+	cout<<"\n";
+	textcolor(BLACK);
+	textbackground(WHITE);
+	  cout<<"So Fork Bomb is Active, Now You Need To Stop It Which Action You Choose is best one:-\n";
+	  cout<<"1.Use taskkill /f /im cmd.exe in command prompt.\n";
+	  cout<<"2.Use Just Closing Your Computer.\n";
+	  cout<<"3.Want To Know What is Fork Bomb.?\n";
+	  cin>>choser;
+	  switch(choser)
+	  {
+	    case 1 :
+	       cout<<"Bravo Right Answer You Get Full Points\n";
+	      score+=5;
+	      cout<<"Your Score:"<<score;
+	      goto troka;
+	      break;
 
-		     }
+	    case 2 :
+	     cout<<"This is Also Correct But Not That Much\n";
+	     score+=3;
+	     cout<<"Your Score:"<<score;
+	     goto troka;
+	     break;
+
+	     case 3 :
+	     cout<<"Fork Bomb is a Virus That Majorly Hangs Your System, its like a infinite loop program that damages Your Computer Completely..\n";
+	     cout<<"Lets Win this Virus.Go Back To Game type:- y(For Yes) and n(For No)\n";
+	     cin>>fixit;
+	    if(strcmp(fixit,"y")==0){
+		goto misr;
+
+	    }else{
+		score-=1;
+		goto play;
+		
+
+	    }
+
+
+
+	     default :
+	     cout<<"Please Choose Right Option :- Start Again\n";
+	      goto misr;
+
+	  }
+
+     }
+   if(strcmp(twocommand,trj)==0){
+    troka:
+    cout<<"\n";
+	 textcolor(RED);
+	 textbackground(BLACK);
+ 	 cout<<"So Trojan is Active, Now You Need To Stop It Which Action You Choose is best one:-\n";
+	  cout<<"1.Use taskkill /f /im cmd.exe in command prompt.\n";
+	  cout<<"2.Use Just Closing Your Computer.\n";
+	  cout<<"3.First Know Which Service is running by using Command tasklist then Choose First Option\n";
+	  cout<<"4.Want To Know What is Trojan Virus?\n";
+	  cin>>choser;
+	  switch(choser)
+	  {
+	  case 1:
+	   cout<<"Bravo This Command Works Really Good But not Completely\n";
+	   score+=2;
+	   cout<<"Score:"<<score;
+	   goto scoreboard;
+	   break;
+
+	  case 2:
+	  cout<<"This is One is Not Right Option\n";
+	  score+=0;
+	  cout<<"Score:"<<score;
+	  goto scoreboard;
+	  break;
+
+	  case 3:
+	  cout<<"Exact Right Answer\n";
+	  cout<<"Tasklist Used in Command Prompt To Get the Services that is Currently Running in Your System.\n";
+	  cout<<"Taskkill Is Used to Kill that Service\n";
+	  score+=5;
+	  cout<<"Score:"<<score;
+	  goto scoreboard;
+	  break;
+
+	  case 4:
+	  cout<<"Trojan is a Virus That Deletes Your Important Files On Your System.\n";
+	  cout<<"1.Lets Win this Virus\n";
+	  cout<<"2.Want To Lose\n";
+	  cin>>maner;
+	  switch(maner){
+	  	case 1 :
+	  	  goto troka;
+	  	  break;
+	  
+	   case 2 :
+	  score-=1;
+	  goto play;
+	  break;
+
+	  default:
+	  cout<<"Choose Correct Option\n";
+	  goto misr;
+	}
+
+	  break;
+
+	  default:
+	  cout<<"Choose Correct One\n";
+	  goto troka;
+
+	}
+
+	}
+
+}
+scoreboard:
+cout<<"\n";
+textcolor(YELLOW);
+textbackground(BLACK);
+cout<<"Your Total Scores Are:"<<score;
+
+
+
+
+  
+
+ 
+
+		     
 cin.get();
 break;
-default: cout<<"System alert Ip taken: 127.0.0.1 System lockout for 101 hours ERROR.";
+default: cout<<"Choose Right One..";
 cin.get();
 }
 cin.get();
@@ -250,7 +425,7 @@ cout<< "              ______________________________________                    
 goto leg;
 cin.get();
 break;
-default: cout<<"Fatal System error Cyberspace servers renconnecting....\nConnection failure System Virus detected swiping hard drive ";
+default: cout<<"Fatal System error RsOs Game servers renconnecting....\nConnection failure System Virus detected swiping hard drive ";
 cin.get();
 break;
 }
