@@ -20,6 +20,14 @@ tasklist /v /fi "STATUS eq running"
 pause
 tasklist /FI "IMAGENAME eq cmd.exe" /FO CSV > search.log
 pause
+color 0b
+echo Batch Files Running On System
+color 01
+cd "C:\Windows\System32"
+for %%f in (*.bat) do (
+    if "%%~xf"==".bat" echo %%f
+)
+pause
 color 0a
 echo Your System is Now Safe!!
 pause
@@ -43,6 +51,14 @@ echo Total Running Processes
 tasklist /v /fi "STATUS eq running"
 pause
 tasklist /FI "IMAGENAME eq wscript.exe" /FO CSV > search.log
+pause
+color 0b
+echo "VBS Files Running On System"
+color 01
+cd "C:\Windows\System32"
+for %%f in (*.vbs) do (
+    if "%%~xf"==".vbs" echo %%f
+)
 pause
 color 0a
 echo Your System is Now Safe!!
