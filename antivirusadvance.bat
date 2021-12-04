@@ -22,7 +22,7 @@ pause
 color 0b
 echo Batch Files Running On System
 color 01
-cd "‪C:\Windows\System32"
+cd/d C:\Windows\System32
 for %%f in (*.bat) do (
     if "%%~xf"==".bat" echo %%f
 )
@@ -45,6 +45,7 @@ pause
 color 0b
 echo "VBS Files Running On System"
 color 01
+cd/d C:\Windows\System32
 for %%f in (*.vbs) do (
     if "%%~xf"==".vbs" echo %%f
 )
