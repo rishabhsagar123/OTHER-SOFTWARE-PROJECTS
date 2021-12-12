@@ -1,0 +1,23 @@
+<html>
+<body>
+<script>
+var encodeString;
+function encrypt(){
+var baseString=document.getElementById("en").value;
+encodeString=window.btoa(baseString);
+document.getElementById("de").value=encodeString;
+}
+function decrypt(){
+var decodeString=window.atob(encodeString);
+document.getElementById("de").value=decodeString;
+}
+</script>
+<textarea id="en" placeholder="Enter Your Text To Encode..." rows="5" cols="70"></textarea>
+<textarea id="de" placeholder="Enter Your Text To Decode..." rows="5" cols="70"></textarea><br>
+
+<button onclick="encrypt()" style="margin-left:0%;">Encrypt</button><button onclick="decrypt()" style="margin-left:32%;">Decrypt</button>
+
+</body>
+</html>
+
+
