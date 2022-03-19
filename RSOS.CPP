@@ -107,7 +107,7 @@ switch(flob)
 		  cout<<"You're answer is "<<addnumi+addnumii<<endl;
 		  cin.get();
 		  goto back;
-		  break;
+
 	     case 2 :
 		  cout<<"Enter 1st number: ";
 		  cin>>addnumi;
@@ -116,7 +116,7 @@ switch(flob)
 		  cout<<"You're answer is: "<<addnumi-addnumii<<endl;
 		  cin.get();
 		  goto back;
-		  break;
+
 	     case 3 :
 		  cout<<"Enter 1st number: \n";
 		  cin>>addnumi;
@@ -125,7 +125,7 @@ switch(flob)
 		  cout<<"You're answer is "<<addnumi*addnumii<<endl;
 		  cin.get();
 		  goto back;
-		  break;
+
 		  case 4 :  cout<<"Enter 1st number: \n";
 		  cin>>addnumi;
 		  cout<<"Enter 2nd number: \n";
@@ -133,7 +133,7 @@ switch(flob)
 		  cout<<"You're answer is "<<addnumi/addnumii<<endl;
 		  cin.get();
 		  goto back;
-		  break;
+
 		  case 5 : cout<<"The creator and developer of this calculator is The GamEvolution.\nThe GamEvolution is an";
 		  delay(2000);
 		  cout<<"is a Software Company that builds intresting products"<<endl;
@@ -342,14 +342,16 @@ if(strcmp(twocommand,frk)==0){
 	   cout<<"Bravo This Command Works Really Good But not Completely\n";
 	   score+=2;
 	   cout<<"Score:"<<score;
-	   goto scoreboard;
+           goto hydraos;
+	   
 	   break;
 
 	  case 2:
 	  cout<<"This is One is Not Right Option\n";
 	  score+=0;
 	  cout<<"Score:"<<score;
-	  goto scoreboard;
+          goto hydraos;
+	  
 	  break;
 
 	  case 3:
@@ -358,7 +360,8 @@ if(strcmp(twocommand,frk)==0){
 	  cout<<"Taskkill Is Used to Kill that Service\n";
 	  score+=5;
 	  cout<<"Score:"<<score;
-	  goto scoreboard;
+          goto hydraos;
+	  
 	  break;
 
 	  case 4:
@@ -386,6 +389,141 @@ if(strcmp(twocommand,frk)==0){
 	  default:
 	  cout<<"Choose Correct One\n";
 	  goto troka;
+
+	}
+
+	}
+
+
+if(strcmp(twocommand,hyd)==0){
+    hydraos:
+    cout<<"\n";
+	 textcolor(GREEN);
+	 textbackground(BLACK);
+ 	 cout<<"So Hydra Virus Made In VBs is Active, Now You Need To Stop It Which Action You Choose is best one:-\n";
+	  cout<<"1.Use taskkill /f /im wscript.exe in command prompt.\n";
+	  cout<<"2.Use Just Closing Your Computer.\n";
+	  cout<<"3.First Know Which Service is running by using Command tasklist then Choose First Option\n";
+	  cout<<"4.Want To Know What is Hydra Virus?\n";
+	  cin>>choser;
+	  switch(choser)
+	  {
+	  case 1:
+	   cout<<"Bravo This Command Works Really Good But not Completely\n";
+	   score+=2;
+	   cout<<"Score:"<<score;
+	   goto keylos;
+	   break;
+
+	  case 2:
+	  cout<<"This is One is Not Right Option\n";
+	  score+=0;
+	  cout<<"Score:"<<score;
+	  goto keylos;
+	  break;
+
+	  case 3:
+	  cout<<"Exact Right Answer\n";
+	  cout<<"Tasklist Used in Command Prompt To Get the Services that is Currently Running in Your System.\n";
+	  cout<<"Taskkill Is Used to Kill that Service\n";
+	  score+=5;
+	  cout<<"Score:"<<score;
+	  goto keylos;
+	  break;
+
+	  case 4:
+	  cout<<"Hydra Virus Made In VBs Is Infinite Loop Program That Hangs The Computer.\n";
+	  cout<<"1.Lets Win this Virus\n";
+	  cout<<"2.Want To Lose\n";
+	  cin>>maner;
+	  switch(maner){
+	  	case 1 :
+	  	  goto hydraos;
+	  	  break;
+	  
+	   case 2 :
+	  score-=1;
+	  goto play;
+	  break;
+
+	  default:
+	  cout<<"Choose Correct Option\n";
+	  goto misr;
+	}
+
+	  break;
+
+	  default:
+	  cout<<"Choose Correct One\n";
+	  goto hydraos;
+
+	}
+
+	}
+
+
+
+if(strcmp(twocommand,keyl)==0){
+    keylos:
+    cout<<"\n";
+	 textcolor(RED);
+	 textbackground(BLACK);
+ 	 cout<<"Hey Keylogger Attack Made In Python Language Is Active, Now You Need To Stop It Which Action You Choose is best one:-\n";
+	  cout<<"1.Use taskkill /f /im servicename.exe(Like Here the service name is python) in command prompt.\n";
+	  cout<<"2.Use Just Closing Your Computer.\n";
+	  cout<<"3.First Know Which Service is running by using Command tasklist then Choose First Option\n";
+	  cout<<"4.Want To Know What is Keylogger Attack?\n";
+	  cin>>choser;
+	  switch(choser)
+	  {
+	  case 1:
+	   cout<<"Bravo This Command Works Really Good But not Completely\n";
+	   score+=2;
+	   cout<<"Score:"<<score;
+	   goto scoreboard;
+	   break;
+
+	  case 2:
+	  cout<<"This is One is Not Right Option\n";
+	  score+=0;
+	  cout<<"Score:"<<score;
+	  goto scoreboard;
+	  break;
+
+	  case 3:
+	  cout<<"Exact Right Answer\n";
+	  cout<<"Tasklist Used in Command Prompt To Get the Services that is Currently Running in Your System.\n";
+	  cout<<"Taskkill Is Used to Kill that Service\n";
+	  score+=5;
+	  cout<<"Score:"<<score;
+	  goto scoreboard;
+	  break;
+
+	  case 4:
+	  cout<<"Keylogger Attack Is An Attack Is The Scanning Tool That Captures Keystorkes In Keyboard.\n";
+	  cout<<"1.Lets Win this Virus\n";
+	  cout<<"2.Want To Lose\n";
+	  cin>>maner;
+	  switch(maner){
+	  	case 1 :
+	  	  goto keylos;
+	  	  break;
+	  
+	   case 2 :
+	  score-=1;
+	  goto play;
+	  break;
+
+	  default:
+	  cout<<"Choose Correct Option\n";
+	  goto misr;
+	}
+
+	  break;
+
+	  default:
+	  cout<<"Choose Correct One\n";
+	  goto keylos;
 
 	}
 
