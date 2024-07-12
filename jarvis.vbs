@@ -1,7 +1,7 @@
 dim a,b,obj,url,c
 a=InputBox("Enter Your Name?")
 set obj=CreateObject("wscript.shell")
-if a="Mansi" then
+if a="Alexia" then
 set sapi=CreateObject("sapi.SpVoice")
 sapi.speak "Hello" +a
 c=InputBox("Enter What You Want To Do? Type-1 for Want To Play Game? Type-2 To Open a Application?")
@@ -80,7 +80,7 @@ end function
 call thanks()
 function thanks()
 MsgBox "Thank You For Playing"
-sapi.speak "Love You Mansi I Made This Game For You And As All Knows R Love M"
+sapi.speak "Love you Alexia I made this game for You."
 end function
 end if
 end if
